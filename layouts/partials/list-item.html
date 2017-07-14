@@ -1,0 +1,14 @@
+<div class="item">
+{{ if eq .Type "post" }}
+  <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+  <h5>{{ printf "%d. " .Date.Day }}{{ $monate := index $.Site.Data.monate.monate }}{{ index $monate (printf "%d" .Date.Month) }}{{ printf " %d " .Date.Year }}</h5>
+  {{ if .Params.tags }}
+    {{ partial "tags" .Params.tags }}
+  {{ end }}
+{{ else }}
+  <h5>{{ .Description }}</h5>
+  {{ if .Params.tags }}
+    {{ partial "tags" .Params.tags }}
+  {{ end }}
+{{ end }}
+</div>

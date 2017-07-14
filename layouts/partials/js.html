@@ -1,0 +1,8 @@
+{{ if .Site.Params.highlight | default false }}<!-- highlight.js -->
+<script src="/js/highlight.min.js"></script>
+{{ range .Site.Params.highlightLanguages }}<script src="/js/highlight/{{ . }}.min.js"></script>
+{{ end }}
+<script>hljs.initHighlightingOnLoad();</script>
+{{ end }}
+<script src="/js/jquery.min.js"></script><!-- jquery -->
+<script src="/js/bootstrap.min.js"></script><!-- bootstrap -->

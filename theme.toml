@@ -1,0 +1,16 @@
+name = "Minimal with tags"
+license = "MIT"
+licenselink = "https://github.com/schotter/minimal-with-tags/blob/master/LICENSE.md"
+description = "Personal blog theme powered by Hugo"
+homepage = "http://github.com/schotter/minimal-with-tags/"
+tags = ["blog", "minimal", "personal", "responsive"]
+features = ["responsive"]
+min_version = "0.24.1"
+
+[author]
+  name = "Thorsten Spätling"
+  homepage = "https://ts-soft.info/"
+
+[original]
+  author = "Calin Tataru"
+  homepage = "https://calintat.github.io/"
